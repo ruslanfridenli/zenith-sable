@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Zenith Sable — Unit Forge</title><link rel="stylesheet" href="style.css"></head><body>
+<header><h1>⇄ zenith sable</h1><nav class="lang"><button data-lang="en" class="on">EN</button><button data-lang="de">DE</button></nav></header>
+<main><aside class="panel">
+<section><h2 data-i="category">Category</h2><select id="cat"></select></section>
+<section><h2 data-i="convert">Convert</h2>
+<label><span data-i="from">From</span><select id="frm"></select></label>
+<label><input type="number" id="val" value="1" step="any"></label>
+<label><span data-i="to">To</span><select id="to"></select></label></section>
+<section class="result"><div class="label" data-i="result">Result</div><div class="big" id="out">—</div></section>
+<section><h2 data-i="about">About</h2><p class="about" data-i="abouttext">All conversions run in Python inside your browser via Pyodide — no server, no tracking.</p></section>
+</aside><div class="stage"><div class="card"><div id="formula"></div><div class="history" id="history"></div></div></div></main>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
+<script src="app.js"></script></body></html>
